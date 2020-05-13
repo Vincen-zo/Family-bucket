@@ -1,32 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <!-- <communication></communication> -->
-    <!-- <slot-example></slot-example> -->
-    <form-example></form-example>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-// import HelloWorld from './components/HelloWorld.vue'
-// import communication from './components/communication';
-// import SlotExample from './components/slots'
-import FormExample from './components/form'
-export default {
-  name: 'app',
-  components: {
-    // HelloWorld
-    // communication,
-    // SlotExample,
-    FormExample
-  }
-}
-</script>
-
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -34,3 +18,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
